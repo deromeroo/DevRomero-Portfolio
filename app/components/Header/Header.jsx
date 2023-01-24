@@ -28,10 +28,10 @@ export default function Header ({showSidebar,setShowSidebar}) {
                     </div>
 
                     <div className='social'>
-                        <Link href={'https://github.com/deromeroo'}>
+                        <Link href={'https://github.com/deromeroo'} target='__blank'>
                             <i className="bi bi-github"></i>
                         </Link>
-                        <Link href={'https://twitter.com/DevRomeroo'}>
+                        <Link href={'https://twitter.com/DevRomeroo'}  target='__blank'>
                             <i className="bi bi-twitter"></i>
                         </Link>
                     </div>
