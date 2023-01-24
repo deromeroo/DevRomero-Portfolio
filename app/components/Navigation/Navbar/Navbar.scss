@@ -1,0 +1,23 @@
+@import '../../../styles/_vars';
+
+.header-nav {
+    display: none;
+}
+
+@media (min-width: 720px) {
+    .burger{
+        display: none;
+    }
+
+    .header-nav{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        border-bottom: 1px solid transparent;
+
+        :hover{
+            color: $gray;
+            transition: color .3s ease-in-out;
+        }
+    }
+}

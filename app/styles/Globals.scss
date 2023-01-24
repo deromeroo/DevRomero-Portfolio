@@ -1,0 +1,64 @@
+@import '_vars';
+@import 'atropos/scss';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $bg-black;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: $title-font;
+}
+
+li {
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $title-font;
+}
+
+p{
+  font-family: $main-font;
+}
+
+
+
+.burger{
+  cursor: pointer;
+  z-index: 90;
+
+  .bar1, .bar2, .bar3 {
+      width: 30px;
+      height: 3px;
+      background-color: $white;
+      margin: 5px 0;
+      transition: 0.4s;
+  }
+
+
+  .change1{
+      transform: translate(0, 5px) rotate(-45deg);
+      background-color: $green;
+  }
+
+  .change2{
+      opacity: 0;
+  }
+
+  .change3{
+      transform: translate(0, -11px) rotate(45deg);
+      background-color: $green;
+  }
+}

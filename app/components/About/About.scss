@@ -1,0 +1,125 @@
+@import '../../styles/_vars';
+
+.About{
+    width: 100%;
+    padding: 70px 10px 25px 10px;
+    margin: 0 auto;
+
+    .About-title{
+        color: $green;
+        margin-bottom: 10px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .About-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .About-info{
+
+
+        p{
+            color: $white;
+            font-size: 16px;
+        }
+
+        h3{
+            margin: 10px 0;
+            font-size: 14px;
+            color: $green;
+        }
+
+        .About-resume{
+            color: $gray;
+            font-size: 14px;
+        }
+
+        .About-button{
+            background-color: $green;
+            padding: 10px;
+            border: none;
+            border-radius: 2px;
+            font-size: 12px;
+            margin-top: 10px;
+            color: $white;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+
+            i{
+                margin-left: 5px;
+            }
+        }
+
+        .About-button:hover{
+            transform: scale(1.05);
+            transition: all .3s ease-in-out;
+            background-color: $bg-military;
+            
+            i{
+                color: $green;
+            }
+        }
+    }
+
+    .About-me{
+        
+
+        .flip{
+            position: relative;
+            transition: all 1.5s ease;
+            transform: perspective(600px);
+            transform-origin: 100% 50%;
+            transform-style: preserve-3d;
+
+            img{
+                width: 150px;
+                height: 200px;
+                border-radius: 5%;
+                backface-visibility: hidden;
+            }
+
+            .flip-text{
+                position: absolute;
+                backface-visibility: hidden;
+                top: 5px;
+                right: 5px;
+                transform: rotateY(-180deg);
+            }
+        }
+
+        .flip:hover{
+            transform: perspective(600px) rotateY(-180deg) translateX(100%);
+        }
+
+
+    }
+
+}
+
+@media (min-width: 480px) { 
+    .About{
+
+        .About-container{
+            text-align: left;
+            flex-wrap: nowrap;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+    }
+}
+
+@media (min-width: 720px) { 
+    .About{
+
+        .About-container{
+            width: 50%;
+        }
+    }
+}

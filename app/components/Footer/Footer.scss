@@ -1,0 +1,19 @@
+@import '../../styles/_vars';
+
+.Footer{
+    display: flex;
+    background-color: $bg-military;
+    padding: 10px;
+    font-size: 14px;
+    color: $white;
+    gap: 7px;
+    justify-content: center;
+    font-family: $main-font;
+    align-items: center;
+
+    a{
+        margin-left: 5px;
+        color: $green;
+    }
+
+}

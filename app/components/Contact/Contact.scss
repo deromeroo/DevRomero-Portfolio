@@ -1,0 +1,262 @@
+@import '../../styles/_vars';
+
+
+.Contact {
+
+    padding: 50px 30px;
+    width: 100%;
+
+    h5 {
+        color: $green;
+        text-align: end;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .Contact-cover {
+
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+
+        h6 {
+            color: $white;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 40px;
+            font-family: $title-font;
+            color: $white;
+            margin-bottom: 25px;
+        }
+
+
+        .letter-image {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            width: 150px;
+            height: 150px;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+        .animated-mail {
+            position: absolute;
+            height: 100px;
+            width: 150px;
+            -webkit-transition: .4s;
+            -moz-transition: .4s;
+            transition: .4s;
+
+            .body {
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 0 70px 150px;
+                border-color: transparent transparent $bg-military transparent;
+                z-index: 2;
+            }
+
+            .top-fold {
+                position: absolute;
+                top: 30px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 34px 74px 0 74px;
+                -webkit-transform-origin: 50% 0%;
+                -webkit-transition: transform .4s .4s, z-index .2s .4s;
+                -moz-transform-origin: 50% 0%;
+                -moz-transition: transform .4s .4s, z-index .2s .4s;
+                transform-origin: 50% 0%;
+                transition: transform .4s .4s, z-index .2s .4s;
+                border-color: $bg-military transparent transparent transparent;
+                z-index: 2;
+            }
+
+            .back-fold {
+                position: absolute;
+                bottom: 0;
+                width: 150px;
+                height: 70px;
+                background: $green;
+                z-index: 0;
+            }
+
+            .left-fold {
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 50px 0 18px 110px;
+                border-color: transparent transparent transparent $bg-military;
+                z-index: 2;
+            }
+
+            .letter {
+                left: 10px;
+                bottom: 0px;
+                position: absolute;
+                width: 130px;
+                height: 5px;
+                background: $white;
+                z-index: 1;
+                overflow: hidden;
+                -webkit-transition: .4s .2s;
+                -moz-transition: .4s .2s;
+                transition: .4s .2s;
+
+                .letter-border {
+                    height: 14px;
+                    width: 100%;
+                    background: $bg-military
+                }
+
+                .letter-title {
+                    margin-top: 10px;
+                    margin-left: 5px;
+                    height: 20px;
+                    width: 70%;
+                    background: #7fca2a70;
+                    border-radius: 4px;
+                    
+                    p{
+                        padding: 3px;
+                        color: $bg-black;
+                        font-size: 12px;
+                        font-family: $main-font;
+                        margin-left: 5px;
+                    }
+                }
+
+                .letter-context {
+                    margin-top: 10px;
+                    margin-left: 5px;
+                    height: 35px;
+                    width: 50%;
+                    background: #7fca2a70;
+                    border-radius: 4px;
+
+                    p{
+                        padding: 3px;
+                        color: $bg-military;
+                        font-size: 12px;
+                        font-family: $main-font;
+                        margin-left: 5px;
+                    }
+                }
+
+                .letter-stamp {
+                    margin-top: 1px;
+                    margin-left: 90px;
+                    border-radius: 100%;
+                    height: 30px;
+                    width: 30px;
+                    background: $bg-military;
+                    opacity: 0.3;
+                }
+            }
+        }
+
+        .shadow {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            width: 250px;
+            height: 30px;
+            transition: .4s;
+            transform: translateX(-50%);
+            -webkit-transition: .4s;
+            -webkit-transform: translateX(-50%);
+            -moz-transition: .4s;
+            -moz-transform: translateX(-50%);
+
+            border-radius: 100%;
+            background: radial-gradient( $bg-military, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+        }
+
+        .letter-image:hover {
+            .animated-mail {
+                transform: translateY(50px);
+                -webkit-transform: translateY(50px);
+                -moz-transform: translateY(50px);
+            }
+
+            .animated-mail .top-fold {
+                transition: transform .4s, z-index .2s;
+                transform: rotateX(180deg);
+                -webkit-transition: transform .4s, z-index .2s;
+                -webkit-transform: rotateX(180deg);
+                -moz-transition: transform .4s, z-index .2s;
+                -moz-transform: rotateX(180deg);
+                z-index: 0;
+            }
+
+            .animated-mail .letter {
+                height: 155px;
+            }
+
+            .shadow {
+                width: 200px;
+            }
+        }
+
+    }
+
+
+    .Contact-controls{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+        padding: 10px 5px;
+        border-bottom: 5px solid $bg-military;
+        color: $gray;
+
+        .Social{
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+
+            .bi-github:hover{
+                transition: color 0.3s ease-in ;
+                color: #6e5494;
+            }
+    
+            .bi-twitter:hover{
+                color: #1da1f2;
+                transition: color 0.3s ease-in ;
+            }
+    
+            .bi-linkedin:hover{
+                color: #0e76A8;
+                transition: color 0.3s ease-in ;
+            }
+        }
+
+        .Top-button{
+            font-family: $main-font;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            button{
+                color: $green;
+                cursor: pointer;
+                background-color: transparent;
+                border: none;
+                font-size: 24px;
+            }
+        }
+    }
+
+
+}
