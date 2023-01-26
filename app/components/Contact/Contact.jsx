@@ -8,7 +8,7 @@ export default function Contact() {
         {/* <h5>Contact</h5> */}
 
         <div className="Contact-cover">
-            <h6>Interesed ?</h6>
+            <h6>Interested ?</h6>
             <p>Let's Talk</p>
 
             <Link href={"mailto:deromero707@gmail.com"} target="__blank">
