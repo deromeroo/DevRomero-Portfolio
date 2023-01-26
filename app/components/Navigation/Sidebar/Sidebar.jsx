@@ -21,13 +21,13 @@ export default function Sidebar({showSidebar,setShowSidebar}) {
                         </a>
                     </li>
                     <li className='Sidebar-nav--item'>
-                        <a href='#skills' onClick={ () => setShowSidebar(false)}>
-                            Skillset
+                        <a href='#projects' onClick={ () => setShowSidebar(false)}>
+                            Projects
                         </a>
                     </li>
                     <li className='Sidebar-nav--item'>
-                        <a href='#projects' onClick={ () => setShowSidebar(false)}>
-                            Projects
+                        <a href='#skills' onClick={ () => setShowSidebar(false)}>
+                            Skillset
                         </a>
                     </li>
                     <li className='Sidebar-nav--item'>

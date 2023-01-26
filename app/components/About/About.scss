@@ -3,7 +3,6 @@
 .About{
     width: 100%;
     padding: 70px 10px 25px 10px;
-    margin: 0 auto;
 
     .About-title{
         color: $green;
@@ -18,7 +17,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 15px;
+        margin: 0 auto;
     }
 
     .About-info{
@@ -100,19 +99,6 @@
 
     }
 
-}
-
-@media (min-width: 480px) { 
-    .About{
-
-        .About-container{
-            text-align: left;
-            flex-wrap: nowrap;
-            width: 70%;
-            margin: 0 auto;
-        }
-
-    }
 }
 
 @media (min-width: 720px) { 

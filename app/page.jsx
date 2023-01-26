@@ -19,8 +19,8 @@ export default function HomePage () {
       <Loader />
       <Header showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
       <About />
-      <Skillset />
       <Projects />
+      <Skillset />
       <Contact />
       <Footer />
     </div>

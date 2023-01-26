@@ -10,13 +10,13 @@ export default function Navbar() {
                 </a>
             </li>
             <li className='header-nav--item'>
-                <a href={'#skills'}>
-                    Skillset
+                <a href='#projects'>
+                    Projects
                 </a>
             </li>
             <li className='header-nav--item'>
-                <a href='#projects'>
-                    Projects
+                <a href={'#skills'}>
+                    Skillset
                 </a>
             </li>
             <li className='header-nav--item'>
